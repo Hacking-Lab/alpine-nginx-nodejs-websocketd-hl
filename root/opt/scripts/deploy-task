@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /winattacklab/
+
+echo "=========================="
+echo "your argument is $1"
+echo "executing /opt/scripts/deploy-task"
+date
