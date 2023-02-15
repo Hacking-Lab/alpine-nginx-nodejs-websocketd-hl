@@ -27,6 +27,8 @@ RUN apk add --no-cache --update \
 	chown -R node:node /opt/data && \
 	rm -rf /var/cache/apk/* 
 
+RUN chmod +x /etc/cont-init.d/20-config
+
 #USER node
 EXPOSE 3000
 
