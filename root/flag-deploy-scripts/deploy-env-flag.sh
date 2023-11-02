@@ -1,3 +1,9 @@
 #!/command/with-contenv bash
-# Use this script to write / replace the goldnugget to the correct place.
-# The goldnugget is available as $GOLDNUGGET.
+
+echo "put your commands to deploy the env based flag here"
+echo "the variable \$GOLDNUGGET contains the dynamic flag"
+
+echo "please extend this script and move $GOLDNUGGET to the final destination"
+echo $GOLDNUGGET
+
+
