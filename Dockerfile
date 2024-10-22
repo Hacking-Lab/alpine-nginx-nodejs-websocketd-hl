@@ -1,4 +1,4 @@
-FROM golang:latest as websocketd
+FROM golang:latest AS websocketd
 ENV CGO_ENABLED=0
 RUN go install github.com/ibuetler/websocketd@latest
 
