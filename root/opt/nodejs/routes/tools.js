@@ -4,37 +4,37 @@ import config from '../config.json';
 const toolsRouter = express.Router();
 
 toolsRouter.get('/', (req, res) => {
-  res.redirect('/tool/deploy');
+  res.redirect('/tool/script1');
 });
 
-toolsRouter.get('/deploy', (req, res) => {
+toolsRouter.get('/script1', (req, res) => {
   res.render('tool', {
-    title: 'Deploy',
-    websocketUri: `${config.wsUrl}/deploy`,
+    title: 'Script1',
+    websocketUri: `${config.wsUrl}/script1`,
     verbose: config.verbose,
   });
 });
 
-toolsRouter.get('/destroy', (req, res) => {
+toolsRouter.get('/script2', (req, res) => {
   res.render('tool', {
-    title: 'Destroy',
-    websocketUri: `${config.wsUrl}/destroy`,
+    title: 'Script2',
+    websocketUri: `${config.wsUrl}/script2`,
     verbose: config.verbose,
   });
 });
 
-toolsRouter.get('/log', (req, res) => {
+toolsRouter.get('/script3', (req, res) => {
   res.render('tool', {
-    title: 'Log',
-    websocketUri: `${config.wsUrl}/log`,
+    title: 'Script3',
+    websocketUri: `${config.wsUrl}/script3`,
     verbose: config.verbose,
   });
 });
 
-toolsRouter.get('/ipaddresses', (req, res) => {
+toolsRouter.get('/script4', (req, res) => {
   res.render('tool', {
-    title: 'IP Addresses',
-    websocketUri: `${config.wsUrl}/ipaddresses`,
+    title: 'Script4',
+    websocketUri: `${config.wsUrl}/script4`,
     verbose: config.verbose,
   });
 });

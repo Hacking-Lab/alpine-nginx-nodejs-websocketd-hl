@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "=========================="
+echo "your argument is $1"
+echo "executing /opt/scripts/script1-task"
+echo "=========================="
+
+date

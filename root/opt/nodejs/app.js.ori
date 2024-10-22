@@ -28,7 +28,7 @@ mainRouter.get('/', (req, res) => {
   res.redirect('/tool');
 });
 app.use('/', mainRouter);
-// app.use('/config', configRouter);
+app.use('/config', configRouter);
 app.use('/tool', toolsRouter);
 app.use('/site', sitesRouter);
 

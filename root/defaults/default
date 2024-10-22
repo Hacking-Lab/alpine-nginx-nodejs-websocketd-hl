@@ -11,7 +11,7 @@ server {
         location /static {
         }
 
-        location /api/deploy/task {
+        location /api/script1/task {
                 proxy_pass http://127.0.0.1:8084;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -19,7 +19,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-        location /api/destroy/task {
+        location /api/script2/task {
                 proxy_pass http://127.0.0.1:8085;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -27,7 +27,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-        location /api/log/task {
+        location /api/script3/task {
                 proxy_pass http://127.0.0.1:8086;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -35,7 +35,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-        location /api/ipaddresses/task {
+        location /api/script4/task {
                 proxy_pass http://127.0.0.1:8087;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -43,7 +43,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-	location /api/deploy {
+	location /api/script1 {
 		proxy_pass http://127.0.0.1:8080;
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade $http_upgrade;
@@ -51,7 +51,7 @@ server {
 		proxy_set_header Host $host;
 	}
 
-        location /api/destroy {
+        location /api/script2 {
                 proxy_pass http://127.0.0.1:8081;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -59,7 +59,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-        location /api/log {
+        location /api/script3 {
                 proxy_pass http://127.0.0.1:8082;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
@@ -67,7 +67,7 @@ server {
                 proxy_set_header Host $host;
         }
 
-        location /api/ipaddresses {
+        location /api/script4 {
                 proxy_pass http://127.0.0.1:8083;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;

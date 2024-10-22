@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+echo "=========================="
+echo "executing /opt/scripts/script2-task"
+echo "=========================="
+
+date

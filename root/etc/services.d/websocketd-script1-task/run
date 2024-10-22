@@ -1,0 +1,5 @@
+#!/command/with-contenv sh
+
+echo "starting script1 task websocketd"
+exec /usr/bin/websocketd -port=8084 -address=127.0.0.1 /opt/scripts/script1-task
+

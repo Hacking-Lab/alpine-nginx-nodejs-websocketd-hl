@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "=========================="
+echo "running the script /opt/scripts/script2 on the server"
+echo "=========================="
+
+date

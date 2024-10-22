@@ -2,5 +2,5 @@
     "apiUrl": "http://localhost/static",
     "wsUrl": "ws://localhost/api",
     "verbose": "true",
-    "appName": "NodeJS Sample Application"
+    "appName": "Websocked App"
 }

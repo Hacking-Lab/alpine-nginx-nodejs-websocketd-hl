@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd /winattacklab/
-
-echo "=========================="
-echo "executing /opt/scripts/log-task"
-date

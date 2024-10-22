@@ -2,21 +2,24 @@ nav#sidebarMenu.col-md-3.col-lg-2.d-md-block.bg-light.sidebar.collapse
     div.sidebar-sticky.pt-3
         ul.nav.flex-column
             li.nav-item
-                a.nav-link(href='/tool/script1' class=(current === '/tool/scrip1' ? 'active' : null))
+                a.nav-link(href='/tool/deploy' class=(current === '/tool/deploy' ? 'active' : null))
                     include ../icons/deploy
-                    | Script1
+                    | Deploy
             li.nav-item
-                a.nav-link(href='/tool/script2' class=(current === '/tool/script2' ? 'active' : null))
+                a.nav-link(href='/tool/destroy' class=(current === '/tool/destroy' ? 'active' : null))
                     include ../icons/destroy
-                    | Script2
+                    | Destroy
             li.nav-item
-                a.nav-link(href='/tool/script3' class=(current === '/tool/script3' ? 'active' : null))
+                a.nav-link(href='/tool/log' class=(current === '/tool/log' ? 'active' : null))
                     include ../icons/log
-                    | Script3
+                    | Log
             li.nav-item
-                a.nav-link(href='/tool/script4' class=(current === '/tool/script4' ? 'active' : null))
+                a.nav-link(href='/tool/ipaddresses' class=(current === '/tool/ipaddresses' ? 'active' : null))
                     include ../icons/ipaddresses
-                    | Script4
+                    | IP Addresses
+            li.nav-item
+                a.nav-link(href='/config' class=(current === '/config' ? 'active' : null))
+                    | Configure
             li.nav-item
                 a.nav-link(href='/site/readme' class=(current === '/site/readme' ? 'active' : null))
                     | Readme
