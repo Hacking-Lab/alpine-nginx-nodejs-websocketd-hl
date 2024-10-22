@@ -4,4 +4,6 @@ echo "=========================="
 echo "running the script /opt/scripts/script2 on the server"
 echo "=========================="
 
+figlet script2
+
 date

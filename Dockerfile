@@ -16,6 +16,7 @@ RUN apk add --no-cache --update \
         npm \
         sudo \
         nginx \
+	figlet \
         apache2-utils \
         openssl && \
 	addgroup -S node && adduser -S node -G node && \
