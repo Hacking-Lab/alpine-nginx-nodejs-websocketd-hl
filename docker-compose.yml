@@ -1,4 +1,3 @@
-version: '3'
 
 services:
   alpine-nginx-nodejs-websocketd-hl:
@@ -8,5 +7,12 @@ services:
     - AUTHOR=e1
     - HL_USER_USERNAME=hacker
     - HL_USER_PASSWORD=compass
+    - NodeJSName=Demo-WebSocketd
+    - NodeJSBase=http://localhost/static
+    - NodeJSWebsocketUrl=ws://localhost/api
     ports:
       - 80:80
+    volumes:
+      - ./scripts:/opt/scripts
+
+

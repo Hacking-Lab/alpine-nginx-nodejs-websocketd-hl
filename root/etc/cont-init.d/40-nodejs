@@ -1,0 +1,9 @@
+#!/command/with-contenv bash
+
+source /etc/hluser
+
+sed -i -e "s|NodeJSName|$NodeJSName|g" /opt/nodejs/config.js
+sed -i -e "s|NodeJSBase|$NodeJSBase|g" /opt/nodejs/config.js
+sed -i -e "s|NodeJSWebsocketUrl|$NodeJSWebsocketUrl|g" /opt/nodejs/config.js
+
+

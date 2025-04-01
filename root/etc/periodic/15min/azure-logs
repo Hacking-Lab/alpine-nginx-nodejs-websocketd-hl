@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grep -i azure /var/log/livecd.log > /var/log/azure.log
+
+
