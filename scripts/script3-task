@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "=========================="
-echo "executing /opt/scripts/ipaddresses-task"
-echo "=========================="
-
-date

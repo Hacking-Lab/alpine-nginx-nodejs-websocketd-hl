@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "=========================="
-echo "running the script /opt/scripts/script4 on the server"
-echo "=========================="
-
-figlet script4
-
-date

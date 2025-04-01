@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "=========================="
-echo "executing /opt/scripts/log-task"
-echo "=========================="
-
-date
