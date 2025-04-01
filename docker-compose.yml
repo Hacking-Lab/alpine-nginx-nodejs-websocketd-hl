@@ -12,7 +12,3 @@ services:
     - NodeJSWebsocketUrl=ws://localhost/api
     ports:
       - 80:80
-    volumes:
-      - ./scripts:/opt/scripts
-
-
