@@ -1,19 +1,17 @@
 import express from 'express';
-import fs from 'fs';
+import fs from 'fs/promises';
+import path from 'path';
 
-const configFilePath = '../data/config.json';
+const configFilePath = path.resolve('data/config.json');
 const configRouter = express.Router();
 
-function getConfigFromFile() {
-  let config = {};
-  return new Promise(resolve => {
-    fs.readFile(configFilePath, (error, data) => {
-      if (!error) {
-        resolve(JSON.parse(data));
-      }
-      resolve(config);
-    });
-  });
+async function getConfigFromFile() {
+  try {
+    const data = await fs.readFile(configFilePath, 'utf8');
+    return JSON.parse(data);
+  } catch {
+    return {};
+  }
 }
 
 configRouter.get('/raw', async (req, res) => {
@@ -26,16 +24,14 @@ configRouter.get('/', async (req, res) => {
   res.render('config', { config });
 });
 
-configRouter.post('/', (req, res) => {
-  fs.writeFile(configFilePath, JSON.stringify(req.body), async (error) => {
-    if (error) {
-      res.status(500);
-      res.render('error', { ...error });
-      return;
-    }
+configRouter.post('/', async (req, res) => {
+  try {
+    await fs.writeFile(configFilePath, JSON.stringify(req.body, null, 2));
     const config = await getConfigFromFile();
     res.render('config', { config });
-  });
+  } catch (error) {
+    res.status(500).render('error', { error });
+  }
 });
 
 export default configRouter;

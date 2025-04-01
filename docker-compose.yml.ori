@@ -10,3 +10,5 @@ services:
     - HL_USER_PASSWORD=compass
     ports:
       - 80:80
+    volumes:
+      - ./scripts:/opt/scripts
