@@ -8,8 +8,6 @@ Alpine Docker Image-HL with NGINX, NodeJS, WebSocketd
 * scripts being executed from the GUI
 
 # YouTube Video
-* https://youtu.be/6J30Qc6sAAw
-
-
+* https://youtu.be/ycSxJyGdddw
 
 
